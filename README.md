@@ -16,7 +16,7 @@ The user interface is based on ...
 
 ```bibtex
 @software{SDM_Plugin_EnergyPlus_FMU_Export,
-	title        = {{SDM\_Plugin\EnergyPlus\FMU\_Export}},
+	title        = {{SDM\_Plugin\_EnergyPlus\_FMU\_Export}},
 	author       = {Steven Timothy Schuerstaedt},
 	url          = {https://github.com/KIT-IAI/SDM_Plugin_EnergyPlus_FMU_Export},
 	year         = {2026}
