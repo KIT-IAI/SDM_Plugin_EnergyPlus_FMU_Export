@@ -11,6 +11,8 @@ The user interface is based on ...
 |Package Name         |Install Command                            |
 |:---                 |:---                                       |
 |                     |vcpkg install --------- triplet=x64-windows|
+|fmt                  |vcpkg install fmt triplet=x64-windows      |
+|geographiclib 	      |vcpkg install geographiclib triplet=x64-windows|
 
 ## How to cite
 
