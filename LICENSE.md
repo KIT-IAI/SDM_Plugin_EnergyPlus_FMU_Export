@@ -1,6 +1,6 @@
 The software is licensed under MIT license
 
-Copyright 2024, Copyright Owner: Karlsruhe Institute of Technology (KIT)  
+Copyright 2026, Copyright Owner: Karlsruhe Institute of Technology (KIT)  
 Author: Steven Timothy Schuerstaedt
 Contact: timothy.schuerstaedt@kit.edu, Institute for Automation and Applied Informatics  
 
