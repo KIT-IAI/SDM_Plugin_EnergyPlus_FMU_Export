@@ -1,6 +1,6 @@
 # EnergyPlus FMU Export
 The EnergyPlus FMU Export is a plugin for the [KITModelViewer](https://github.com/KIT-IAI/SDM_KITModelViewer) for exporting of CityGML EnergyADE building models as EnergyPlus Functional Mock-up Unit. 
-Input for the plugin is a CityGML EnergyADE building model (see [EnergyADE Enrichment](https://github.com/KIT-IAI/SDM_Plugin_EnergyADE_Enrichment for a enrichment plugin). Output is a fully self contained FMU, consisting of the building .idf file (Energy Plus input file), a .epw file (EnergyPlus weather) and the complete EnergyPlus simulator. 
+Input for the plugin is a CityGML EnergyADE building model (see [EnergyADE Enrichment](https://github.com/KIT-IAI/SDM_Plugin_EnergyADE_Enrichment) for a enrichment plugin). Output is a fully self contained FMU, consisting of the building .idf file (Energy Plus input file), a .epw file (EnergyPlus weather) and the complete EnergyPlus simulator. 
 
 ## Highlights
 - User-interface for FMU export
