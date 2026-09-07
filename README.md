@@ -13,6 +13,11 @@ Input for the plugin is a CityGML EnergyADE building model (see [EnergyADE Enric
 <img width="977" height="787" alt="screenshot_gui" src="https://github.com/user-attachments/assets/aa99521c-af78-4084-babc-a9d6e55f4d2f" />
 
 
+## Usage
+
+
+For more information on these objects check the EnergyPlus documentation (Link).
+
 ## Examples
 HVAC FMU, Shading Controller FMU
 
