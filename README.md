@@ -3,10 +3,10 @@ The EnergyPlus FMU Export is a plugin for the [KITModelViewer](https://github.co
 Input for the plugin is a CityGML EnergyADE building model (see [EnergyADE Enrichment](https://github.com/KIT-IAI/SDM_Plugin_EnergyADE_Enrichment) for a enrichment plugin). Output is a fully self contained FMU, consisting of the building .idf file (Energy Plus input file), a .epw file (EnergyPlus weather) and the complete EnergyPlus simulator. 
 
 ## Highlights
-- User-interface for FMU export
+- user-interface for FMU export
 - multiple buildings and thermal zones supported
 - FMU version 2.0 ready for co-simulation
-- automatic generation of EnergyPlus weather file, based on building location
+- co-simulation with external HVAC system
 
 
 
@@ -14,15 +14,40 @@ Input for the plugin is a CityGML EnergyADE building model (see [EnergyADE Enric
 
 
 ## Usage
+- start with any CityGMl EnergyADE building model and goto Plugin -> create FMU
+- select building and corresponding thermal zone and define in- and ouputs
+- confirm settings by clicking "Apply to selected zones"
+- select external weather data
+- export FMU
+
+Available FMU inputs:
+
+| Group description    | Schedule name | Notes |
+| -------- | ------- | ------- |
+| IdealLoadsAirSystem | System Availability Schedule    | |
+| IdealLoadsAirSystem | Cooling Availability Schedule   ||
+| IdealLoadsAirSystem | Heating Availability Schedule   ||
+| IdealLoadsAirSystem | Thermostat Heating Schedule   ||
+| IdealLoadsAirSystem | Thermostat Cooling Schedule   ||
+ | Internal Gains | Number of People Schedule   ||
+ | Internal Gains | Lighting Power Schedule   ||
+ | Internal Gains | Electric Equipment Schedule   ||
+| External Equipment | Shading Controller Schedule   |creates a WindowShadingController Object|
+ | External Equipment | Qconv   | convective sensible heating / cooling load, creates a OtherEquipment Object|
+ | External Equipment | Qrad   |radiant heating / cooling load, creates a OtherEquipment Object|
+ | External Equipment | Qlat   |latent heating / cooling load, creates a OtherEquipment Object|
 
 
-For more information on these objects check the EnergyPlus documentation (Link).
+
+
+
+For more information on these objects check the [EnergyPlus documentation](https://bigladdersoftware.com/epx/docs/23-1/).
 
 ## Examples
 HVAC FMU, Shading Controller FMU
 
 ## Dependencies
-tbd
+coming soon
 
 ### Use of vcpkg:
 
@@ -33,7 +58,7 @@ tbd
 |geographiclib 	      |vcpkg install geographiclib triplet=x64-windows|
 
 ## Literature
-paper
+coming soon
 
 ## How to cite
 
