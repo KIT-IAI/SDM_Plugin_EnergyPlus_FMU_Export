@@ -6,6 +6,7 @@ Input for the plugin is a CityGML EnergyADE building model (see [EnergyADE Enric
 - user-interface for FMU export
 - multiple buildings and thermal zones supported
 - FMU version 2.0 ready for co-simulation
+- Windows and Linux (Ubuntu 24) support
 - co-simulation with external HVAC system
 
 
@@ -14,13 +15,14 @@ Input for the plugin is a CityGML EnergyADE building model (see [EnergyADE Enric
 
 
 ## Usage
-- start with any CityGMl EnergyADE building model and goto Plugin -> create FMU
+### Workflow:
+- start with any CityGML EnergyADE building model and goto Plugin -> create FMU
 - select building and corresponding thermal zone and define in- and ouputs
 - confirm settings by clicking "Apply to selected zones"
 - select external weather data
 - export FMU
 
-Available FMU inputs:
+### Available FMU inputs:
 
 | Group description    | Schedule name | Notes |
 | -------- | ------- | ------- |
@@ -36,15 +38,19 @@ Available FMU inputs:
  | External Equipment | Qconv   | convective sensible heating / cooling load, creates a OtherEquipment Object|
  | External Equipment | Qrad   |radiant heating / cooling load, creates a OtherEquipment Object|
  | External Equipment | Qlat   |latent heating / cooling load, creates a OtherEquipment Object|
+ 
+For more information on the created objects check the [EnergyPlus documentation](https://bigladdersoftware.com/epx/docs/23-1/).
+
+### Include EnergyPlus:
+
+When EnergyPlus is not included in the FMU, the FMU searchs for a EnergyPlus installation on the host system, specified in a enviromental variable called "ENERGYPLUS".
 
 
 
-
-
-For more information on these objects check the [EnergyPlus documentation](https://bigladdersoftware.com/epx/docs/23-1/).
 
 ## Examples
-HVAC FMU, Shading Controller FMU
+In the examples folder are sample FMUs for an external HVAC system and an external Window Shading Controller. These FMUs were created with openModelica v1.25.5.
+
 
 ## Dependencies
 coming soon
