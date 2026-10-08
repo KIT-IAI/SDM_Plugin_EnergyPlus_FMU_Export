@@ -64,7 +64,8 @@ coming soon
 |geographiclib 	      |vcpkg install geographiclib triplet=x64-windows|
 
 ## Literature
-coming soon
+[Generation of EnergyPlus Functional Mockup-Units for co-simulation from CityGML building models](https://www.conftool.com/bausim2026/index.php/Sch%C3%BCrst%C3%A4dt-Generation_of_EnergyPlus_Functional_Mockup-Units_for_co-simulation-261_a.pdf?page=downloadPaper&filename=Sch%C3%BCrst%C3%A4dt-Generation_of_EnergyPlus_Functional_Mockup-Units_for_co-simulation-261_a.pdf&form_id=261&form_version=final)
+
 
 ## How to cite
 
